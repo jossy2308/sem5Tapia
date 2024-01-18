@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sem5Tapia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0ded1ba97cc7b3bc69bcd4c25d9cde4506b2a025")]
 [assembly: System.Reflection.AssemblyProductAttribute("sem5Tapia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sem5Tapia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

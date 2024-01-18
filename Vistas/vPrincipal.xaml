@@ -10,18 +10,15 @@
             TextColor="red"
             FontSize="20"
             HorizontalTextAlignment="Center"
-            />
-        <Entry x:Name="txtName"
-               Placeholder="Ingrese su nombre">
-            
-        </Entry>
+        />
+        <Entry x:Name="txtName" Placeholder="Ingrese su nombre" />
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
-                <RowDefinition/>     
+                <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -31,7 +28,6 @@
                     Clicked="btnInsertar_Clicked"
                     Grid.Row="0"
                     Grid.Column="0"/>
-
             <Label x:Name="statusMessage"
                    TextColor="Red"
                    Grid.Row="1"
@@ -44,31 +40,47 @@
             <CollectionView x:Name="ListaPersona"
                             Grid.Row="3"
                             Grid.Column="0">
-
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
                             <Grid.RowDefinitions>
-                                <RowDefinition/>
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="2*"/>
                             </Grid.ColumnDefinitions>
-
                             <Label Text="{Binding Id}"
                                    Grid.Row="0"
                                    Grid.Column="0"/>
                             <Label Text="{Binding Name}"
-                                   Grid.Row="0"
-                                   Grid.Column="1"/>
-
-
+                                  Grid.Row="0"
+                                  Grid.Column="1"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </Grid>
+        <Entry x:Name="txtEliminar" Placeholder="Ingrese el ID" Grid.Row="4" Grid.Column="0"/>
+        <Button x:Name="btnEliminar"
+          Text="Eliminar Persona"
+          Clicked="btnEliminar_Clicked"
+          Grid.Row="5"
+          Grid.Column="0"/>
+        <Label x:Name="statusMessageE"
+               TextColor="Red"
+               Grid.Row="6"
+               Grid.Column="0"/>
+        <Entry x:Name="txtActualizar" Placeholder="Ingrese el ID" Grid.Row="7" Grid.Column="0"/>
+        <Entry x:Name="txtActualizar1" Placeholder="Ingrese nuevo nombre" Grid.Row="8" Grid.Column="0"/>
+        <Button x:Name="btnActualizar"
+                Text="Actualizar Persona"
+                Clicked="btnActualizar_Clicked"
+                Grid.Row="9"
+                Grid.Column="0"/>
+        <Label x:Name="statusMessageA"
+               TextColor="Red"
+               Grid.Row="10"
+               Grid.Column="0"/>
     </VerticalStackLayout>
 </ContentPage>
